@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.controls input,
+.controls select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.crypto-table th,
+.crypto-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: right;
+}
+
+.crypto-table th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
+
+.crypto-table td:first-child,
+.crypto-table th:first-child {
+  text-align: center;
+}
+
+.crypto-table .coin-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.crypto-table img {
+  width: 25px;
+  height: 25px;
+}
+
+.coin-name {
+  font-weight: bold;
+}
+
+.coin-symbol {
+  font-size: 12px;
+  color: #666;
+}
+
+.positive {
+  background-color: #e9f9ee;
+  color: #008000;
+}
+
+.negative {
+  background-color: #fdeaea;
+  color: #c00;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  
+}
